@@ -1,0 +1,323 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="input.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <section>
+    <nav
+      class="h-[20vh] flex justify-around items-center w-full bg-slate-100 bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 absolute pb-5">
+
+      <div>
+        <img class="rounded-3xl" src="../images/Logo.png" alt="Logo" height="50" width="75" />
+      </div>
+      <div>
+        <button
+          class=" text-gray-500 z-[2]  rounded-full bg-white pl-2 md:pl-6 pr-3 sm:pr-16 md:pr-48 py-3 text-xs font-medium text-primary transition duration-150 ease-in-out hover:bg-slate-200 hover:bg-opacity-100 focus:outline-none focus:ring-0 flex "
+          type="button" id="button-addon3" data-te-ripple-init>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-4 h-4 mr-2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>
+          Search
+        </button>
+      </div>
+
+      <div>
+        <ul class="lg:flex  hidden text-white justify-around font-bold ">
+          <li class="p-2 mr-1 my-1 rounded-3xl hover:bg-black duration-200 inline-flex cursor-pointer"
+            style="width: fit-content; height:40px; background-color: #9ca3af69;"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <path
+                d="M11.644 1.59a.75.75 0 01.712 0l9.75 5.25a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.712 0l-9.75-5.25a.75.75 0 010-1.32l9.75-5.25z" />
+              <path
+                d="M3.265 10.602l7.668 4.129a2.25 2.25 0 002.134 0l7.668-4.13 1.37.739a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.71 0l-9.75-5.25a.75.75 0 010-1.32l1.37-.738z" />
+              <path
+                d="M10.933 19.231l-7.668-4.13-1.37.739a.75.75 0 000 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 000-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 01-2.134-.001z" />
+            </svg>
+            <a class="ml-3">ALL</a>
+          </li>
+          <li class="p-2 mx-3 my-1 hover:rounded-full hover:bg-black duration-200 circle"><svg
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+            </svg></li>
+          <li class="p-2 mx-3 my-1 hover:rounded-full hover:bg-black duration-200 circle "><svg
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+            </svg>
+          </li>
+          <li class="p-2 mx-3 my-1 hover:rounded-full hover:bg-black duration-200 circle"><svg
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
+            </svg>
+          </li>
+          <li class="p-2 mx-3 my-1 hover:rounded-full hover:bg-black duration-200 circle"><svg
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+            </svg>
+          </li>
+          <li class="p-2 mx-3 my-1 hover:rounded-full hover:bg-black duration-200 circle"><svg
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+            </svg>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex items-center visible">
+        <button
+          class="button hover:scale-125 hover:text-white duration-500 rounded-full font-bold text-sm uppercase p-3 mr-2"
+          style="background-color: rgb(26, 26, 27);
+          color: 00FFCA;">Log In</button>
+        <button class="button hover:scale-125 duration-500 rounded-full font-bold text-sm uppercase p-3" style="background-color: rgb(27, 26, 26);
+          color: 00FFCA;">Sign Up</button>
+      </div>
+
+    </nav>
+  </section>
+
+  <div class="relative rounded-t-2xl z-50 bg-gray-200 top-28 flex gap-10">
+    <div class="basis-1/6 ">
+      <div class="bg-white rounded-2xl ml-5 mt-5 text-center pt-5 h-fit " style=" width:200px">
+        <img src="../images/profile.png" style="height: 100; width: 110;" class="ml-10 rounded-full" />
+        <span class="font-bold text-xl">
+          Guy Hawkins
+        </span>
+        <span class="text-thin text-sm text-gray-400 border-b-2 pb-7">@guy_hawkins1984</span>
+        <div class="mt-12 mb-2 flex justify-center items-center"><span class="font-bold text-blue-700 text-base ">View
+            Profile </span><img src="../images/arrow.png" class="h-5 mt-1 ml-1 cursor-pointer" /></div>
+      </div>
+      <div>
+        <span class="font-bold relative top-8 left-3">MENU</span>
+        <div class="h-80 mx-5 mt-10 rounded-xl grid grid-cols-2 grid-rows-4" style="width:200px">
+          <span class="border-r border-b border-gray-400 ccontent"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+            <a>News Feed</a></span>
+          <span class="border-b border-gray-400 ccontent">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+            </svg>
+            <a>Videos</a></span>
+          <span class=" border-b border-gray-400 ccontent bg-white rounded-xl m-1 text-blue-700 font-bold ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+            </svg>
+            <a>Live
+              Match</a></span>
+          <span class="border-b border-l border-gray-400 ccontent">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </svg>
+            <a>Gallery</a></span>
+          <span class="border-r border-b border-t border-gray-400 ccontent">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+            </svg>
+            <a>Community</a></span>
+          <span class="border-b border-gray-400 ccontent">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+            </svg>
+            <a>Playlist</a></span>
+          <span class="border-r border-gray-400 ccontent">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg><a>Settings</a></span>
+          <span class="border-gray-400 ccontent ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+            </svg>
+            <a>Logout</a></span>
+        </div>
+      </div>
+    </div>
+
+    <section class="basis-3/6 flex flex-col">
+      <div class="flex-col flex">
+        <div class="font-bold bg-white inline rounded-t-xl p-2 pb-3 text-sm relative top-7"><span>Latest News</span>
+        </div>
+        <div class="bg-white rounded-b-3xl rounded-r-3xl  relative top-3 p-2 ">
+          <div>
+            <div class="flex items-center justify-start">
+              <div class="p-2">
+                <div class="flex [&:hover>div]:w-16 [&>div:hover]:w-[30rem]">
+                  <div
+                    class="group relative h-96 w-[30rem] cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-500">
+                    <img class="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125 "
+                      src="../images/mmount.jpg" alt="" />
+                    <div
+                      class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
+                      <div class="absolute inset-x-5 bottom-6">
+                        <div class="flex gap-3 text-white">
+
+
+                          <div>
+                            <p class="font-sembold text-xl text-gray-100">Mason Mount</p>
+                            <p class="text-gray-300">New acttacking midfielder on the Manchester squad</p>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative h-96 w-16 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-500">
+                    <img class="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125"
+                      src="../images/dgea.jpg" alt="" />
+                    <div
+                      class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
+                      <div class="absolute inset-x-5 bottom-6">
+                        <div class="flex gap-3 text-white">
+                          <div>
+                            <p class="font-sembold text-xl text-gray-100">De Gea</p>
+                            <p class="text-gray-300">Spaniard left manchester united after 12 years</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative h-96 w-16 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-500">
+                    <img class="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125"
+                      src="../images/onana.jpg" alt="" />
+                    <div
+                      class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
+                      <div class="absolute inset-x-5 bottom-6">
+                        <div class="flex gap-3 text-white">
+
+                          <div>
+                            <p class="font-sembold text-xl text-gray-100">Andre Onana</p>
+                            <p class="text-gray-300">Inter agreed onana joins Manchester United from Inter Milan</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative h-96 w-16 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-500">
+                    <img class="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125"
+                      src="../images/fixtures.png" alt="" />
+                    <div
+                      class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
+                      <div class="absolute inset-x-5 bottom-6">
+                        <div class="flex gap-3 text-white">
+
+                          <div>
+                            <p class="font-sembold text-xl text-gray-100">Premier League</p>
+                            <p class="text-gray-300">MUN Fixtures</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper gap-2 scrollBar mt-10">
+          <div class="vidcards flex items-center px-2"><img src="../images/lmkick.gif" /></div>
+          <div class="vidcards flex items-center px-2"><img src="../images/kdkick.gif"
+              style="height: 180px; width: 280px;" /></div>
+              <div class="vidcards flex items-center px-2"><img src="../images/sidekick.gif" /></div>
+             <div class="vidcards flex items-center px-2"><img src="../images/SKick.gif" /></div>
+             <div class="vidcards flex items-center px-2"><img src="../images/CRBic.gif" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex">
+      <div>
+        <div class="basis-2/6 mr-5">
+          <div class="overflow-y-scroll scrollbarHide max-h-[100vh] w-full">
+
+            <div class="font-bold my-2 text-xl"><span>SPOTLIGHT</span></div>
+            <div class="flex flex-col ">
+              <div class="card">
+                <div class="p-2 cursor-pointer relative">
+                  <h5 class="absolute right-2 badge">Lionel Messi</h5> <img src="../images/messi.jpg" alt="messi"
+                    class="object-left-top h-[28vh] w-[100%]" />
+                </div>
+              </div>
+              <div class="card">
+                <div class="p-2 cursor-pointer relative">
+                  <h5 class="absolute right-2 badge">Harry Kane</h5> <img src="../images/Harry.png" alt="Kane"
+                    class="object-left-top h-[28vh] w-[100%]" />
+                </div>
+              </div>
+              <div class="card">
+                <div class="p-2 cursor-pointer relative">
+                  <h5 class="absolute right-2 badge">Cristiano Ronaldo</h5> <img src="../images/RonaldoPM.jpg"
+                    alt="Ronaldo" class="object-left-top h-[28vh] w-[100%]" />
+                </div>
+              </div>
+              <div class="card">
+                <div class="p-2 cursor-pointer relative">
+                  <h5 class="absolute right-2 badge">Zlatan Ibrahimovic</h5> <img src="../images/Ibra.jpeg"
+                    alt="Ibrahimovic" class="object-left-top h-[28vh] w-[100%]" />
+                </div>
+              </div>
+              <div class="card">
+                <div class="p-2 cursor-pointer relative">
+                  <h5 class="absolute right-2 badge">Rasmus Hojlund</h5> <img src="../images/rasmush.jpg" alt="Hojlund"
+                    class="object-left-top h-[28vh] w-[100%]" />
+                </div>
+              </div>
+              <div class="card">
+                <div class="p-2 cursor-pointer relative">
+                  <h5 class="absolute right-2 badge">Jude Bellingham</h5> <img src="../images/jbell.jpg"
+                    alt="Jude Bellingham" class="object-left-top h-[28vh] w-[100%]" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+</body>
+
+</html>
