@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="../dist/output.css" rel="stylesheet">
+  <link href="./input.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -168,7 +168,7 @@
       </div>
     </div>
 
-    <section class="basis-3/6 flex flex-col">
+    <section class="basis-3/6 xl:flex hidden flex-col">
       <div class="flex-col flex">
         <div class="font-bold bg-white inline rounded-t-xl p-2 pb-3 text-sm relative top-7"><span>Latest News</span>
         </div>
@@ -254,65 +254,72 @@
           </div>
         </div>
 
-        <div class="wrapper gap-2 scrollBar mt-10">
+        <div class="wrapper gap-2 scrollBar mt-10 w-[100vh]">
           <div class="vidcards flex items-center px-2"><img src="./images/lmkick.gif" /></div>
           <div class="vidcards flex items-center px-2"><img src="./images/kdkick.gif"
               style="height: 180px; width: 280px;" /></div>
-              <div class="vidcards flex items-center px-2"><img src="./images/sidekick.gif" /></div>
-             <div class="vidcards flex items-center px-2"><img src="./images/SKick.gif" /></div>
-             <div class="vidcards flex items-center px-2"><img src="./images/CRBic.gif" /></div>
+          <div class="vidcards flex items-center px-2"><img src="./images/sidekick.gif" /></div>
+          <div class="vidcards flex items-center px-2"><img src="./images/SKick.gif" /></div>
+          <div class="vidcards flex items-center px-2"><img src="./images/CRBic.gif" /></div>
         </div>
       </div>
     </section>
 
     <section class="flex">
       <div>
-        <div class="basis-2/6 mr-5">
-          <div class="overflow-y-scroll scrollbarHide max-h-[100vh] w-full">
-
-            <div class="font-bold my-2 text-xl"><span>SPOTLIGHT</span></div>
-            <div class="flex flex-col ">
-              <div class="card">
-                <div class="p-2 cursor-pointer relative">
-                  <h5 class="absolute right-2 badge">Lionel Messi</h5> <img src="./images/messi.jpg" alt="messi"
-                    class="object-left-top h-[28vh] w-[100%]" />
+        <div class="xl:basis-2/6 basis-5/6 mr-5">
+          <div>
+            <div class="overflow-y-scroll scrollbarHide max-h-[100vh] w-auto">
+              <div class="font-bold my-2 text-xl"><span>SPOTLIGHT</span></div>
+              <div class="xl:flex flex-col grid grid-rows-2 grid-cols-3 gap-2 ">
+                <div class="card">
+                  <div class="p-2 cursor-pointer relative">
+                    <h5 class="absolute right-2 badge">Lionel Messi</h5> <img src="./images/messi.jpg" alt="messi"
+                      class="object-left-top h-[28vh] w-[100%]" />
+                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="p-2 cursor-pointer relative">
-                  <h5 class="absolute right-2 badge">Harry Kane</h5> <img src="./images/Harry.png" alt="Kane"
-                    class="object-left-top h-[28vh] w-[100%]" />
+                <div class="card">
+                  <div class="p-2 cursor-pointer relative">
+                    <h5 class="absolute right-2 badge">Harry Kane</h5> <img src="./images/Harry.png" alt="Kane"
+                      class="object-left-top h-[28vh] w-[100%]" />
+                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="p-2 cursor-pointer relative">
-                  <h5 class="absolute right-2 badge">Cristiano Ronaldo</h5> <img src="./images/RonaldoPM.jpg"
-                    alt="Ronaldo" class="object-left-top h-[28vh] w-[100%]" />
+                <div class="card">
+                  <div class="p-2 cursor-pointer relative">
+                    <h5 class="absolute right-2 badge">Cristiano Ronaldo</h5> <img src="./images/RonaldoPM.jpg"
+                      alt="Ronaldo" class="object-left-top h-[28vh] w-[100%]" />
+                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="p-2 cursor-pointer relative">
-                  <h5 class="absolute right-2 badge">Zlatan Ibrahimovic</h5> <img src="./images/Ibra.jpeg"
-                    alt="Ibrahimovic" class="object-left-top h-[28vh] w-[100%]" />
+                <div class="card">
+                  <div class="p-2 cursor-pointer relative">
+                    <h5 class="absolute right-2 badge">Zlatan Ibrahimovic</h5> <img src="./images/Ibra.jpeg"
+                      alt="Ibrahimovic" class="object-left-top h-[28vh] w-[100%]" />
+                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="p-2 cursor-pointer relative">
-                  <h5 class="absolute right-2 badge">Rasmus Hojlund</h5> <img src="./images/rasmush.jpg" alt="Hojlund"
-                    class="object-left-top h-[28vh] w-[100%]" />
+                <div class="card">
+                  <div class="p-2 cursor-pointer relative">
+                    <h5 class="absolute right-2 badge">Rasmus Hojlund</h5> <img src="./images/rasmush.jpg" alt="Hojlund"
+                      class="object-left-top h-[28vh] w-[100%]" />
+                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="p-2 cursor-pointer relative">
-                  <h5 class="absolute right-2 badge">Jude Bellingham</h5> <img src="./images/jbell.jpg"
-                    alt="Jude Bellingham" class="object-left-top h-[28vh] w-[100%]" />
+                <div class="card">
+                  <div class="p-2 cursor-pointer relative">
+                    <h5 class="absolute right-2 badge">Jude Bellingham</h5> <img src="./images/jbell.jpg"
+                      alt="Jude Bellingham" class="object-left-top h-[28vh] w-[100%]" />
+                  </div>
                 </div>
               </div>
             </div>
-
+            <div class="wrapper gap-2 scrollBar mt-10 w-[140vh] xl:hidden">
+              <div class="vidcards flex items-center px-2"><img src="./images/lmkick.gif" /></div>
+              <div class="vidcards flex items-center px-2"><img src="./images/kdkick.gif"
+                  style="height: 180px; width: 280px;" /></div>
+              <div class="vidcards flex items-center px-2"><img src="./images/sidekick.gif" /></div>
+              <div class="vidcards flex items-center px-2"><img src="./images/SKick.gif" /></div>
+              <div class="vidcards flex items-center px-2"><img src="./images/CRBic.gif" /></div>
+            </div>
           </div>
-
-
+          </div>
         </div>
       </div>
     </section>

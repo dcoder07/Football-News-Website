@@ -31,7 +31,6 @@
     }
 
 .wrapper{
-    width: 100vh;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;  
     display: flex;
